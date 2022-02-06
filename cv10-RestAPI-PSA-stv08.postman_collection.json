@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "c4616faa-d648-44f2-a874-866b98352ddc",
+		"name": "cv10-RestAPI-PSA-stv08",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Daj Index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Daj knihy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/knihy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"knihy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pridaj knihu",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nazov\":\"Python for Dummies 2\",\"popis\":\"Starting with Python again\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8888/knihy",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"knihy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Daj knihu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/knihy/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"knihy",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Vymaz knihu",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/knihy/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"knihy",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Daj knihu - chyba index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/knihy/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"knihy",
+						"100"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{% extends 'hlavna.html' %}
+
+{% block content %}
+<form method="post">
+    <label for="address">Adresa</label>
+    <input type="text" name="address" id="address">
+    <label for="interface">Nazov Rozhrania</label>
+    <input type="text" name="interface" id="interface">
+    <input type="submit" value="Nastav IP na rozhranie">
+</form>
+{% endblock %}

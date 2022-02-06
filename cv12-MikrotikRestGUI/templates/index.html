@@ -1,0 +1,16 @@
+{% extends 'hlavna.html' %}
+
+{% block content %}
+<table>
+    <tr>
+        <th>Rozhranie</th>
+        <th>IP</th>
+    </tr>
+    {% for rozhranie in data %}
+    <tr>
+        <td>{{rozhranie['name']}}</td>
+        <td>{{rozhranie['address']}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
